@@ -26,7 +26,7 @@ Voice.on("ready", async() => {
     });
 
   Voice.log(
-    `Vension sesli hoşgeldin \'${Voice.user.username}\' adı ile giriş yaptı!`
+    `Florya Super Lig sesli hoşgeldin \'${Voice.user.username}\' adı ile giriş yaptı!`
   );
 
   const Guild =
@@ -47,7 +47,7 @@ Voice.on("ready", async() => {
     .then(connection => {
       Voice.voiceConnection = connection;
       Voice.channelID = Channel.id;
-      Voice.log("Vension sesli hoşgeldin çalışıyor.");
+      Voice.log("Florya sesli hoşgeldin çalışıyor.");
       if (!Channel.hasStaff()) playVoice(Voice);
       else Voice.staffJoined = true;
     })
